@@ -33,6 +33,7 @@ exports.defineAutoTests = function () {
 
     var onEvent;
 
+    // Test comment
     describe('Battery (navigator.battery)', function () {
 
         it("battery.spec.1 should exist", function () {
