@@ -5,16 +5,16 @@ addons:
     secure: KzYNSlNhzvLtIMFIuOj6NxInX8gdqW73Mmx0XwJ9DJ65Qgvz91rmWsLlQskaHTeQT6Lxv79G8UaH8XcY1rfWAXzA6vjeHU4TQh2oUmHfnknDWYmyIT46BRGr6ggcwoEsCLi2bVFS1HzdLjd+QW5Rzy08MR0KHkpoXl3QIfO1AyLrGVOb8MIGIkCe5xIzWKA+pmFb3CJtU0sWugJNSynXJCHzFHB4fNFBYkvXRis3/iaBLUmTiXOVhVzpRdsPhnsUI9va31HMslm/o50J+c4fEGmFIJO4ciulG/MfwYPBufDFvZtlFcbC5ja4FEFnpcBUVRWwDgixLXvNnYaSTXU/4NIwTJcnOecj5e3DhDrMXm2bLPiYM1yrpRSgJEa916nWPa3pNLkAcAqas4LauTCNL6bJX3g9X9/6xPeMJebi1yr8OO3rdVyqf42saYcFRC1T6Fj/dkW8epzi7xwkyKTckHZGDDWE47G79PsgS1JzFOYzdRVYqWzHjXJTz3Bm0Hdt4PQayp4ITfFQmWsBufbkIAHQIcGpiSoIas1zeKx4TSob7XWLWvcxRaQLZHjPghbXQqdCGJMFrT4XYpwfY3t/qmRhLJyae6I+qR+HG2QLxafVMXcn4gvmNznTT6arQuaj05cOTFbtWvWXcAhUjrFPufJD+U4qsfQBIacl+XQM1Is=
 matrix:
   include:
-  - env: PLATFORM=ios-9.3
-    os: osx
-    osx_image: xcode7.3
-    language: node_js
-    node_js: '4.2'
-  - env: PLATFORM=ios-10.0
-    os: osx
-    osx_image: xcode7.3
-    language: node_js
-    node_js: '4.2'
+#  - env: PLATFORM=ios-9.3
+#    os: osx
+#    osx_image: xcode7.3
+#    language: node_js
+#    node_js: '4.2'
+#  - env: PLATFORM=ios-10.0
+#    os: osx
+#    osx_image: xcode7.3
+#    language: node_js
+#    node_js: '4.2'
   - env: PLATFORM=android-4.4
     os: linux
     language: android
@@ -24,33 +24,33 @@ matrix:
       components:
       - tools
       - tools
-  - env: PLATFORM=android-5.1
-    os: linux
-    language: android
-    node_js: '4.2'
-    jdk: oraclejdk8
-    android:
-      components:
-      - tools
-      - tools
-  - env: PLATFORM=android-6.0
-    os: linux
-    language: android
-    node_js: '4.2'
-    jdk: oraclejdk8
-    android:
-      components:
-      - tools
-      - tools
-  - env: PLATFORM=android-7.0
-    os: linux
-    language: android
-    node_js: '4.2'
-    jdk: oraclejdk8
-    android:
-      components:
-      - tools
-      - tools
+#  - env: PLATFORM=android-5.1
+#    os: linux
+#    language: android
+#    node_js: '4.2'
+#    jdk: oraclejdk8
+#    android:
+#      components:
+#      - tools
+#      - tools
+#  - env: PLATFORM=android-6.0
+#    os: linux
+#    language: android
+#    node_js: '4.2'
+#    jdk: oraclejdk8
+#    android:
+#      components:
+#      - tools
+#      - tools
+#  - env: PLATFORM=android-7.0
+#    os: linux
+#    language: android
+#    node_js: '4.2'
+#    jdk: oraclejdk8
+#    android:
+#      components:
+#      - tools
+#      - tools
 before_install:
 - npm cache clean -f
 - npm install -g n
